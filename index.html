@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  </head>
+  <body>
+    <h1>Cloud Cafe</h1>
+
+    <div class="content">
+      <form id="add-cafe-form">
+          <input type="text" id="name">
+          <button>Submit</button>
+      </form>
+
+      <ul id="cafe-list"></ul>
+    </div>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyAGmNXWDqMWeuZ3iq9Bvk7yCnxvvRpwK70",
+        authDomain: "movies-9da1f.firebaseapp.com",
+        databaseURL: "https://movies-9da1f-default-rtdb.firebaseio.com",
+        projectId: "movies-9da1f",
+        storageBucket: "movies-9da1f.appspot.com",
+        messagingSenderId: "1013957140934",
+        appId: "1:1013957140934:web:d86ed4fe4f9f668b5112c7",
+        measurementId: "G-Q2KKY5ZGRR",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
